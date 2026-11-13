@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ダンケアーバイト 評価管理</title>
+
+  <link rel="icon" type="image/png" href="./dankearbeit-icon-192.png">
+  <link rel="apple-touch-icon" href="./dankearbeit-icon-180.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="評価管理">
+
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f4f6fa;
+      text-align: center;
+      padding: 50px 20px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 30px 20px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+
+    img {
+      width: 110px;
+      height: 110px;
+      object-fit: contain;
+    }
+
+    h1 {
+      font-size: 21px;
+      margin: 20px 0 10px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.7;
+    }
+
+    .button {
+      display: block;
+      margin-top: 30px;
+      padding: 16px;
+      background: #315caa;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 17px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <img src="./dankearbeit-icon-512.png" alt="ダンケアーバイト">
+
+    <h1>ダンケアーバイト</h1>
+
+    <p>利用者別 勤務評価管理システム</p>
+
+    <a class="button"
+       href="https://script.google.com/macros/s/AKfycbxxDtvMPtxUZ8EC7tKi3w1jNRWUKBPPEl5VGI0JiZ52VpW1UfRc31bYIvaT_hRJD3-1Eg/exec">
+      評価管理システムを開く
+    </a>
+
+  </div>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js');
+    }
+  </script>
+</body>
+</html>
